@@ -58,7 +58,16 @@ const config = {
         path: 'docs-website',
         routeBasePath: '/website',
         sidebarPath: require.resolve('./sidebars.js'),
-      }, 
+      },
+    ],
+    [ 
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-database',
+        path: 'docs-database',
+        routeBasePath: '/database',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
     ],
     
 ],
@@ -86,6 +95,12 @@ const config = {
             label: 'Website',
             position: 'left',
             activeBaseRegex: '/website'
+          },
+          {
+            to: '/database',
+            label: 'Database',
+            position: 'left',
+            activeBaseRegex: '/database'
           },
           
         ],
