@@ -66,7 +66,16 @@ const config = {
         id: 'docs-database',
         path: 'docs-database',
         routeBasePath: '/database',
-        sidebarPath: require.resolve('./sidebars.js'),
+        sidebarPath: false,
+      },
+    ],
+    [ 
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-architecture',
+        path: 'docs-architecture',
+        routeBasePath: '/architecture',
+        sidebarPath: false,
       },
     ],
     
@@ -101,6 +110,12 @@ const config = {
             label: 'Database',
             position: 'left',
             activeBaseRegex: '/database'
+          },
+          {
+            to: '/architecture',
+            label: 'Architecture',
+            position: 'left',
+            activeBaseRegex: '/architecture'
           },
           
         ],
