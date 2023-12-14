@@ -78,6 +78,15 @@ const config = {
         sidebarPath: false,
       },
     ],
+    [ 
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-retrospectives',
+        path: 'docs-retrospectives',
+        routeBasePath: '/retrospectives',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
     
 ],
 
@@ -117,22 +126,28 @@ const config = {
             position: 'left',
             activeBaseRegex: '/architecture'
           },
+          {
+            to: '/retrospectives',
+            label: 'Retrospectives',
+            position: 'left',
+            activeBaseRegex: '/retrospectives'
+          },
           
         ],
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Website',
-            items: [
-              {
-                label: 'OneCampus',
-                to: '/', //put our website link here
-              },
-            ],
-          },
-        ],
+        // links: [
+        //   {
+        //     title: 'Website',
+        //     items: [
+        //       {
+        //         label: 'OneCampus',
+        //         to: '/', //put our website link here
+        //       },
+        //     ],
+        //   },
+        // ],
         copyright: `Copyright © ${new Date().getFullYear()} OneCampus, Inc.`,
       },
       prism: {
