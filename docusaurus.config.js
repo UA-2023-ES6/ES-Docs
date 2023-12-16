@@ -63,15 +63,6 @@ const config = {
     [ 
       '@docusaurus/plugin-content-docs',
       {
-        id: 'docs-database',
-        path: 'docs-database',
-        routeBasePath: '/database',
-        sidebarPath: false,
-      },
-    ],
-    [ 
-      '@docusaurus/plugin-content-docs',
-      {
         id: 'docs-architecture',
         path: 'docs-architecture',
         routeBasePath: '/architecture',
@@ -113,12 +104,6 @@ const config = {
             label: 'Website',
             position: 'left',
             activeBaseRegex: '/website'
-          },
-          {
-            to: '/database',
-            label: 'Database',
-            position: 'left',
-            activeBaseRegex: '/database'
           },
           {
             to: '/architecture',
