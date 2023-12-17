@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Test',
-  tagline: 'testing',
-  favicon: 'img/favicon.ico',
+  title: 'OneCampus',
+  tagline: 'OneCampus',
+  favicon: 'img/books.png',
 
   // Set the production url of your site here
   url: 'https://ua-2023-es6.github.io',
@@ -19,7 +19,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'UA-2023-ES6', // Usually your GitHub org/user name.
-  projectName: 'ES-Docs', // Usually your repo name.
+  projectName: 'OneCampus', // Usually your repo name.
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -63,19 +63,19 @@ const config = {
     [ 
       '@docusaurus/plugin-content-docs',
       {
-        id: 'docs-database',
-        path: 'docs-database',
-        routeBasePath: '/database',
+        id: 'docs-architecture',
+        path: 'docs-architecture',
+        routeBasePath: '/architecture',
         sidebarPath: false,
       },
     ],
     [ 
       '@docusaurus/plugin-content-docs',
       {
-        id: 'docs-architecture',
-        path: 'docs-architecture',
-        routeBasePath: '/architecture',
-        sidebarPath: false,
+        id: 'docs-retrospectives',
+        path: 'docs-retrospectives',
+        routeBasePath: '/retrospectives',
+        sidebarPath: require.resolve('./sidebars.js'),
       },
     ],
     
@@ -87,10 +87,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'ES Docs',
+        title: 'OneCampus',
         logo: {
-          alt: 'ES Docs Logo',
-          src: 'img/logo.svg',
+          alt: 'OneCampus logo',
+          src: 'img/books.png',
         },
         items: [
           {
@@ -106,34 +106,34 @@ const config = {
             activeBaseRegex: '/website'
           },
           {
-            to: '/database',
-            label: 'Database',
-            position: 'left',
-            activeBaseRegex: '/database'
-          },
-          {
             to: '/architecture',
             label: 'Architecture',
             position: 'left',
             activeBaseRegex: '/architecture'
+          },
+          {
+            to: '/retrospectives',
+            label: 'Retrospectives',
+            position: 'left',
+            activeBaseRegex: '/retrospectives'
           },
           
         ],
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Website',
-            items: [
-              {
-                label: 'ES Project',
-                to: '/', //put our website link here
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} ES Project, Inc. Built with Docusaurus.`,
+        // links: [
+        //   {
+        //     title: 'Website',
+        //     items: [
+        //       {
+        //         label: 'OneCampus',
+        //         to: '/', //put our website link here
+        //       },
+        //     ],
+        //   },
+        // ],
+        copyright: `Copyright © ${new Date().getFullYear()} OneCampus, Inc.`,
       },
       prism: {
         theme: lightCodeTheme,

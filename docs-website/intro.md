@@ -4,10 +4,7 @@ slug: /
 ---
 # Website
 
-this is the docs for the website.
+In here you will find walkthroughs like guides on how to do some actions in our website.
 
-Include here things like:
-* how to create an account
-* how to create a group
-* how to register an institution
+The website was developed in react with bootstrap.
 
