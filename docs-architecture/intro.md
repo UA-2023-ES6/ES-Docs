@@ -10,5 +10,5 @@ Each of the instantiated microservices has a corresponding api gateway to allow 
 To store all data, the api objects access a MySQL database in an RDS service
 The images used to deploy the services are imported from ECR repositories that update through a CD pipeline directly from our git repository.
 Cognito is also used to manage and verify user credentials.
-!['architecture'](architecture.jpg)
+!['architecture'](arch.drawio.png)
 
