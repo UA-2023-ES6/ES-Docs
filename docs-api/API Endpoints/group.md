@@ -3,6 +3,8 @@ sidebar_position: 2
 slug: /groups
 ---
 
+[Try in swagger](https://ua-2023-es6.github.io/Swagger-Doc/)
+
 # Groups
 this is the docs for the API
 
