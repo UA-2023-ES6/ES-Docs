@@ -3,6 +3,8 @@ sidebar_position: 5
 slug: /questions
 ---
 
+[Try in swagger](https://ua-2023-es6.github.io/Swagger-Doc/)
+
 # Questions
 
 ## Question Creation

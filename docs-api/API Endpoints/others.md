@@ -3,6 +3,8 @@ sidebar_position: 6
 slug: /others
 ---
 
+[Try in swagger](https://ua-2023-es6.github.io/Swagger-Doc/)
+
 # Others
 this is the docs for the API
 
