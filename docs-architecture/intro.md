@@ -12,5 +12,4 @@ The images used to deploy the services are imported from ECR repositories that u
 Cognito is also used to manage and verify user credentials.
 
 This architecture can be deployed by running the terraforma file, with the exception of the cognito and ECR services that need to be manualy configured.
-!['architecture'](architecture.jpg)
-
+!['architecture'](arch.drawio.png)
