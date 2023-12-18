@@ -3,6 +3,8 @@ sidebar_position: 3
 slug: /messages
 ---
 
+[Try in swagger](https://ua-2023-es6.github.io/Swagger-Doc/)
+
 # Messages
 
 This is the documentation for the messaging API.
